@@ -1,0 +1,11 @@
+delete from   part_trans;
+delete from   transactions;
+delete from   supported_car;
+delete from   spare_part;
+delete from   warehouse_keeper;
+delete from   supervisor;
+delete from   employee;
+delete from   company;
+delete from   customer;
+delete from   service;
+delete from   user;
