@@ -84,11 +84,13 @@ model varchar(25) NOT NULL
 --Tables for transactions
 create table transactions(
 trans_id int,
-amount decimal(6,2) NOT NULL,
+amount decimal(8,2) NOT NULL,
 customer_id int NOT NULL,
 status varchar(10) NOT NULL,--the phase in which it is
 supervisor_id int,--supervisor who authorizes discount(if null there is no discount)
 employee_id int,--employee who does a physical transaction (if null it is not physical)
+est_date date,
+entry_date date NOT NULL,
 PRIMARY KEY (trans_id)
 );
 
