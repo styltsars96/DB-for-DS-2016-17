@@ -99,6 +99,7 @@ create table part_trans(
 trans_id int,
 quantity int,
 part_id int,
+remaining int,
 FOREIGN KEY (trans_id) REFERENCES transactions(trans_id),
 FOREIGN KEY (part_id) REFERENCES spare_part(part_id)
 );
