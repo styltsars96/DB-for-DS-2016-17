@@ -114,17 +114,17 @@ public final class DataBase {
         return result;
     }
 
-	//Close connection safely!
+	/*//Close connection safely!
 	private void closeConnection(Connection connection){
 		if(connection!=null) try {
-			connection.close();
+			connection.close();//It shouldn't be done on this level! LOGGING ON AND OFF TO DB IS EXPENSIVE!!!
 			System.out.println("DB Connection closed successfully!");
 		} catch (SQLException e) {
 			System.out.println("Problem while closing connection!");
 			e.printStackTrace();
 		}
 	}
-	
+	*/
 	//Handle exceptions during queries.
 	private void handleException(SQLException e, String sql) {
 		System.out.println("Problem with SQL Query!");
