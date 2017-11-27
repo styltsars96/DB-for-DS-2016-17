@@ -1,5 +1,3 @@
---Eveything is executed! To execute ,remove all the comments!!!!!!!!!!!!!!!
---Domain: 83.212.105.20 , username: 214106 , password: changeit , port:3306
 --BEGIN USER SERVICE
 -- id is universal for all user types!!!
 --Table user
