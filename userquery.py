@@ -4,7 +4,7 @@ from random import choice
 
 fo=open("DSdatda.sql","r+")
 fo.seek(0)
-fo.write("--user service:\n")
+fo.write("-- user service:\n")
 user=""
 for i in range(1,51):
     user="customer"
@@ -32,7 +32,7 @@ for i in range(1,6):
 for i in range(1,6):
     j=i+45
     fo.write("insert into supervisor values("+str(j)+",'supervisor"+str(i)+"');\n")
-fo.write("--spare parts\n")
+fo.write("-- spare parts\n")
 foo = ["used","new"]
 for i in range(1,501):
     part_id = str(i)
@@ -44,8 +44,8 @@ for i in range(1,501):
     fo.write("insert into spare_part values("+part_id+","+availability+",'"+name+"','"+manufacturer+"',"+price+",'"+part_type+"');\n")
     for j in range(1,randint(3,8)):
         fo.write("insert into supported_car values("+part_id+",'carmodel"+str(randint(1,46))+"');\n")
-fo.write("--transactions\n")
-fo.write("--CREATE IF NECESSARY...\n")
+fo.write("-- transactions\n")
+fo.write("-- CREATE IF NECESSARY...\n")
 
 fo.truncate()
 fo.close()
